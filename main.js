@@ -55,4 +55,4 @@ console.log(cognomiPrecedentiOrdinati);
 console.log(listaCognomi.indexOf(cognomeUtente) + 1);
 
 // posizione cognomeUtente
-document.getElementById('posizione').innerHTML = "<h3>" + cognomeUtente + " sei in posizione: " + (listaCognomi.indexOf(cognomeUtente) + 1) + "</h3>";
+document.getElementById('posizione').innerHTML = "<h3>" + "<span>" + cognomeUtente + "</span>" + " sei in posizione: " + (listaCognomi.indexOf(cognomeUtente) + 1) + "</h3>";
