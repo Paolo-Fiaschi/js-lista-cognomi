@@ -1,0 +1,29 @@
+/* regole generali */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  height: 100vh;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url(https://previews.123rf.com/images/haryfoto/haryfoto1706/haryfoto170600123/80324341-bamboo-texture-wood-background-bamboo-plank-backdrop-wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+ol li,ul li{
+  letter-spacing: 1px;
+  padding: 4px;
+  font-size: 20px;
+
+}
+h2,h3{
+ text-decoration: underline;
+ letter-spacing: 1px;
+
+}

@@ -11,7 +11,7 @@
 var cognomeUtente, listaCognomi, cognomiPrecedentiNonOrdinati, cognomiPrecedentiOrdinati;
 
 // lista cognomi originaria
-listaCognomi = ["Rovini", "Monteforte", "Cintelli", "Cappellini", "Arzilli", "Pardossi"];
+listaCognomi = ["Messi", "Ronaldo", "Del Piero", "Baggio", "Zidane", "Dybala"];
 
 console.log(listaCognomi);
 
@@ -25,7 +25,9 @@ listaCognomi.push(cognomeUtente);
 
 console.log(listaCognomi);
 
-// ciclo per ogni item della listaCognomi NON ordinata
+document.getElementById('nonOrdinata').innerHTML = "<h2 id='nonOrdinata'>" + "Lista Non Ordinata" + "</h2>";
+
+// ciclo per ogni item della listaCognomi NON ordinata e output
 for (var i = 0; i < listaCognomi.length; i++) {
 
   cognomiPrecedentiNonOrdinati = document.getElementById('cognomiNonOrdinati').innerHTML;
@@ -39,7 +41,8 @@ listaCognomi.sort();
 
 console.log(listaCognomi);
 
-// ciclo per ogni item della listaCognomi ordinata
+document.getElementById('ordinata').innerHTML = "<h2 id='ordinata'>" + "Lista Ordinata" + "</h2>";
+// ciclo per ogni item della listaCognomi ordinata e output
 for (var i = 0; i < listaCognomi.length; i++) {
 
   cognomiPrecedentiOrdinati = document.getElementById('cognomiOrdinati').innerHTML;
@@ -52,4 +55,4 @@ console.log(cognomiPrecedentiOrdinati);
 console.log(listaCognomi.indexOf(cognomeUtente) + 1);
 
 // posizione cognomeUtente
-document.getElementById('posizione').innerHTML = "<p>" + cognomeUtente + " sei in posizione: " + (listaCognomi.indexOf(cognomeUtente) + 1) + "</p>";
+document.getElementById('posizione').innerHTML = "<h3>" + cognomeUtente + " sei in posizione: " + (listaCognomi.indexOf(cognomeUtente) + 1) + "</h3>";
